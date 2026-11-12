@@ -1,0 +1,21 @@
+ASISTEN GURU — versi web offline
+
+Isi:
+- index.html dan app.js: aplikasi
+- manifest.webmanifest dan ikon: identitas untuk instalasi layar utama
+- sw.js: cache offline (service worker)
+
+PENTING:
+Untuk memasang sebagai PWA dan mengaktifkan cache offline, aplikasi harus dibuka melalui alamat HTTPS (bukan file://).
+Cara paling mudah: unggah isi folder ini ke hosting statis HTTPS, misalnya Netlify Drop, lalu buka alamat yang diberikan di Chrome Android.
+Di Chrome: menu ⋮ > Tambahkan ke layar utama / Instal aplikasi.
+
+Fitur:
+- Data siswa dan absensi disimpan di localStorage browser perangkat.
+- Absensi harian: Hadir, Sakit, Izin, Alpa.
+- Laporan harian dapat diunduh sebagai CSV.
+- Pemilihan file disediakan; versi awal menampilkan file terpilih selama halaman terbuka, bukan penyimpanan lampiran permanen di dalam aplikasi.
+- Semua data tetap berada di browser/perangkat, tidak disinkronkan ke cloud.
+
+Cadangan:
+Data siswa dan absensi tersimpan di penyimpanan browser. Jangan hapus data situs/browser karena dapat menghapus data aplikasi. Ekspor laporan CSV secara berkala.
